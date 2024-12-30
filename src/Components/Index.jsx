@@ -2,10 +2,11 @@ import React, { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import line from '../images/line.png'
-// import { ReactTyped } from "react-typed";
+import line from '/images/line.png'
 import Button from './Button'
 import cv from '../Pdf/cv.pdf'
+import posterImg from '/images/poster.png'
+import myPic from '/images/Nitish_jha_pic.png'
 
 const Index = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -38,7 +39,7 @@ const Index = () => {
         </div>
         <div className='max-md:w-full hidden max-md:flex max-md:justify-center max-md:h-[30%] mt-10'>
           <div className='w-48 h-48 rounded-full overflow-hidden border border-black border-l-8 border-r-8 border-t-2 border-b-2'>
-              <img ref={ref} src="/src/images/mypc.png" className='w-48 h-48' onMouseEnter={colorImage} onMouseLeave={sameImage}/>
+              <img ref={ref} src={myPic} className='w-48 h-48' onMouseEnter={colorImage} onMouseLeave={sameImage}/>
           </div>        
         </div>
         <div className='w-[55%] max-md:w-full max-md:h-[70%]'>
@@ -59,7 +60,7 @@ const Index = () => {
         </div>
         <div className='pic w-[35%] grid place-items-center max-md:hidden'>
           <div className='w-[30rem] h-[30rem] max-lg:w-64 max-lg:grid max-lg:place-items-center max-xl:grid max-xl:place-items-center'>
-            <img src="/src/images/xx.png" className='w-[30rem] h-[30rem] ml-3 max-lg:w-72 max-lg:h-72 max-xl:h-72 max-xl:w-72 grayscale hover:grayscale-0'/>
+            <img src={posterImg} className='w-[30rem] h-[30rem] ml-3 max-lg:w-72 max-lg:h-72 max-xl:h-72 max-xl:w-72 grayscale hover:grayscale-0'/>
           </div>
         </div>
       <div className='hidden max-md:block h-2 w-full border-b-2'></div>

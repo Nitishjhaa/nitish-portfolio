@@ -3,7 +3,12 @@ import { useState,useRef } from 'react'
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from 'gsap'
-import project1 from '../images/project-1.jpg'
+import projectX from '/images/project-6.jpg'
+import projecta from '/images/project-5.jpg'
+import projectb from '/images/project-4.jpg'
+import projectc from '/images/project-2.jpg'
+import projectd from '/images/project-1.jpg'
+import projecte from '/images/project-3.png'
 
 
 const Project = () => {
@@ -14,7 +19,7 @@ const Project = () => {
             id:1,
             className:"w-80 h-80 overflow-hidden max-md:w-72 max-md:h-72 border border-black relative rounded-tl-2xl rounded-br-2xl max-lg:h-60 max-lg:w-60 [&_a]:hover:bottom-7 [&_a]:hover:transition-all [&_img]:hover:grayscale-0",
             imgClassName :"w-80 h-80 hover:scale-105 max-md:w-72 max-md:h-72  max-lg:h-60 max-lg:w-60 grayscale",
-            src:"src/images/project-6.jpg",
+            src: projectX,
             link:"",
             gitLink:"",
         },
@@ -22,7 +27,7 @@ const Project = () => {
             id:2,
             className:"w-80 h-80 overflow-hidden max-md:w-72 max-md:h-72 border border-black relative rounded-tl-2xl rounded-br-2xl max-lg:h-60 max-lg:w-60 [&_a]:hover:bottom-7 [&_a]:hover:transition-all [&_img]:hover:grayscale-0",
             imgClassName :"w-80 h-80 hover:scale-105 max-md:w-72 max-md:h-72 max-lg:h-60 max-lg:w-60 grayscale",
-            src:"src/images/project-1.jpg",
+            src:projecta,
             link:"/",
             gitLink:"/",
         },
@@ -30,7 +35,7 @@ const Project = () => {
             id:3,
             className:"w-80 h-80 overflow-hidden max-md:w-72 max-md:h-72 border border-black relative rounded-tl-2xl rounded-br-2xl max-lg:h-60 max-lg:w-60 [&_a]:hover:bottom-7 [&_a]:hover:transition-all [&_img]:hover:grayscale-0",
             imgClassName :"w-80 h-80 hover:scale-105 max-md:w-72 max-md:h-72 max-lg:h-60 max-lg:w-60 grayscale",
-            src:"src/images/project-2.jpg",
+            src:projectc,
             link:"/",
             gitLink:"/",
         },
@@ -38,7 +43,7 @@ const Project = () => {
             id:4,
             className:"w-80 h-80 overflow-hidden max-md:w-72 max-md:h-72 border border-black relative rounded-tl-2xl rounded-br-2xl max-lg:h-60 max-lg:w-60 [&_a]:hover:bottom-7 [&_a]:hover:transition-all [&_img]:hover:grayscale-0",
             imgClassName :"w-80 h-80 hover:scale-105 max-md:w-72 max-md:h-72 max-lg:h-60 max-lg:w-60 grayscale object-cover",
-            src:"src/images/preview.png",
+            src:projecte,
             link:"/",
             gitLink:"/",
         },
@@ -46,7 +51,7 @@ const Project = () => {
             id:5,
             className:"w-80 h-80 overflow-hidden max-md:w-72 max-md:h-72 border border-black relative rounded-tl-2xl rounded-br-2xl max-lg:h-60 max-lg:w-60 [&_a]:hover:bottom-7 [&_a]:hover:transition-all [&_img]:hover:grayscale-0",
             imgClassName :"w-80 h-80 hover:scale-105 max-md:w-72 max-md:h-72 max-lg:h-60 max-lg:w-60 grayscale",
-            src:"src/images/project-4.jpg",
+            src:projectd,
             link:"/",
             gitLink:"/",
         },
@@ -54,7 +59,7 @@ const Project = () => {
             id:6,
             className:"w-80 h-80 overflow-hidden max-md:w-72 max-md:h-72 border border-black relative rounded-tl-2xl rounded-br-2xl max-lg:h-60 max-lg:w-60 [&_a]:hover:bottom-7 [&_a]:hover:transition-all [&_img]:hover:grayscale-0",
             imgClassName :"w-80 h-80 hover:scale-105 max-md:w-72 max-md:h-72 max-lg:h-60 max-lg:w-60 grayscale",
-            src:"src/images/project-5.jpg",
+            src:projectb,
             link:"/",
             gitLink:"/",
             

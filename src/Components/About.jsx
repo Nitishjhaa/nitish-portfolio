@@ -3,7 +3,11 @@ import { useState,useRef } from 'react'
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from 'gsap'
-import blob from '../images/blobBW.png'
+import myPic from '/images/Nitish_jha_pic.png'
+import tailwind from '/images/tailwind.png'
+import express from '/images/express.png'
+import mongoDB from '/images/mongoDB.png'
+import gsap1 from '/images/gsap.svg'
 
 const About = () => {
     let ref= useRef()
@@ -12,39 +16,44 @@ const About = () => {
       {
         id : 1,
         name:"Html",
-        src:"src/images/html.png",
-        className : "w-10 h-10",
+        src:"fa-brands fa-html5 text-3xl",
+        src2:null,
+        className : "w-10 h-10 grid place-items-center",
         class2:"h-full w-[19rem] max-md:w-[13rem] max-lg:w-[12rem] rounded-3xl bg-gray-400 text-center pt-2 text-white",
         value:"80%"
       },
       {
         id : 2,
         name:"Css",
-        src:"src/images/css.jpg",
-        className : "w-10 h-10",
+        src:"fa-brands fa-css text-3xl",
+        src2:null,
+        className : "w-10 h-10 grid place-items-center",
         class2:"h-full w-[17rem] max-md:w-[12rem] max-lg:w-[11rem] rounded-3xl bg-gray-400 text-center pt-2 text-white",
         value:"75%"
       },
       {
         id : 3,
         name:"Js",
-        src:"src/images/js.png",
-        className : "w-10 h-10",
+        src:"fa-brands fa-js text-3xl",
+        src2:null,
+        className : "w-10 h-10 grid place-items-center",
         class2:"h-full w-[15rem] max-md:w-[10rem] max-lg:w-[9rem] rounded-3xl bg-gray-400 text-center pt-2 text-white",
         value:"60%"
       },
       {
         id : 4,
         name:"Bootstrap",
-        src:"src/images/bootstrap.png",
-        className : "w-10 h-10",
+        src:"fa-brands fa-bootstrap text-3xl",
+        src2:null,
+        className : "w-10 h-10 grid place-items-center",
         class2:"h-full w-[12rem] max-md:w-[8rem] max-lg:w-[6.4rem] rounded-3xl bg-gray-400 text-center pt-2 text-white",
         value:"40%"
       },
       {
         id : 5,
         name:"Tailwind",
-        src:"src/images/tailwind.png",
+        src:null,
+        src2:tailwind,
         className : "w-10 h-10",
         class2:"h-full w-[19rem] max-md:w-[13rem] max-lg:w-[12rem] rounded-3xl bg-gray-400 text-center pt-2 text-white",
         value:"80%"
@@ -55,40 +64,45 @@ const About = () => {
       {
         id : 6,
         name:"React",
-        src:"src/images/react.png",
-        className : "w-10 h-10",
+        src:"fa-brands fa-react text-3xl",
+        src2:null,
+        className : "w-10 h-10 grid place-items-center",
         class2:"h-full w-[16.8rem] max-md:w-[11.2rem] max-lg:w-[9.9rem] rounded-3xl bg-gray-400 text-center pt-2 text-white",
         value:"70%"
       },
       {
         id : 7,
         name:"Express",
-        src:"src/images/express.png",
-        className : "w-10 h-10",
+        src:null,
+        src2:express,
+        className : "w-10 h-10 grid place-items-center",
         class2:"h-full w-[16.8rem] max-md:w-[6rem] max-lg:w-[4.8rem] rounded-3xl bg-gray-400 text-center pt-2 text-white",
         value:"70%"
       },
       {
         id : 9,
         name:"Node",
-        src:"src/images/nodejs.png",
-        className : "w-10 h-10",
+        src:"fa-brands fa-node-js text-3xl",
+        src2:null,
+        className : "w-10 h-10 grid place-items-center",
         class2:"h-full w-[15rem] max-md:w-[10rem] max-lg:w-[9rem] rounded-3xl bg-gray-400 text-center pt-2 text-white",
         value:"60%"
       },
       {
         id : 10,
         name:"MongoDB",
-        src:"src/images/mongoDB.png",
-        className : "w-10 h-10",
+        src:null,
+        src2:mongoDB,
+        className : "w-10 h-10 grid place-items-center",
         class2:"h-full w-[12rem] max-md:w-[8rem] max-lg:w-[6.4rem] rounded-3xl bg-gray-400 text-center pt-2 text-white",
         value:"40%"
       },
       {
         id : 8,
         name:"Gsap",
-        src:"src/images/gsap.svg",
-        className : "w-10 h-10",
+        src:null,
+        src2:gsap1,
+        className : "w-10 h-10 grid place-items-center",
         class2:"h-full w-[12rem] max-md:w-[8rem] max-lg:w-[6.4rem] rounded-3xl bg-gray-400 text-center pt-2 text-white",
         value:"40%"
       },
@@ -180,7 +194,7 @@ const About = () => {
       <div className='w-[80%] h-full max-md:w-full'>
         <div className='flex flex-row w-full max-lg:-ml-20'>
           <div className='picContainer w-96 overflow-hidden max-md:hidden'>
-            <img src="src/images/myPc.png" className='h-96 max-md:hidden rounded-tl-3xl rounded-br-3xl'/>
+            <img src={myPic} className='h-96 max-md:hidden rounded-tl-3xl rounded-br-3xl'/>
           </div>
           <div className='h-96 max-md:ml-28 w-full flex flex-col items-center '>
             <h1 className='text-center max-md:ml-10 text-2xl '>Introduction</h1>
@@ -220,7 +234,10 @@ const About = () => {
                     return (
                       <div key={items.id} className='flex justify-center items-center gap-5 mt-6 overflow-hidden'>
                         <div className='w-20 flex flex-col items-center'>
-                          <img src={items.src} className={items.className} />
+                          <div className={items.className}>
+                            <i className={items.src}></i>
+                            <img src={items.src2} />
+                          </div>
                           <h1 className=''>{items.name}</h1>
                         </div>
                         <div  className='h-10 rounded-3xl w-96 border border-black max-md:w-60 bg-black max-lg:w-64'>
@@ -239,7 +256,10 @@ const About = () => {
                     return (
                       <div key={items.id} className='flex justify-center items-center gap-5 mt-6'>
                         <div className='w-20 flex flex-col items-center'>
-                          <img src={items.src} className={items.className} />
+                        <div className={items.className}>
+                          <i className={items.src}></i>
+                          <img src={items.src2} />
+                          </div>
                           <h1 className=''>{items.name}</h1>
                         </div>
                         <div className='h-10 rounded-3xl w-96 border border-black max-md:w-60 bg-black max-lg:w-64'>
