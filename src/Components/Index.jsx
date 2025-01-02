@@ -7,6 +7,7 @@ import Button from './Button'
 import cv from '../Pdf/cv.pdf'
 import posterImg from '/images/poster.png'
 import myPic from '/images/Nitish_jha_pic.png'
+import bg from '/images/bg.jpg'
 
 const Index = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -30,7 +31,7 @@ const Index = () => {
       ref.current.src = "src/images/myPc.png"
     }
   return (
-    <div className='home w-full h-screen flex justify-center items-center invisible'>
+    <div className='home w-full h-screen flex justify-center items-center invisible' style={{backgroundImage: `url(${bg})`, backgroundSize: 'cover'}}>
       <div className='h-screen w-[80%] flex flex-row gap-10 max-md:w-[95%] max-md:flex-col max-md:gap-5 max-lg:w-[95%]'>
         <div className='h-full w-10 flex flex-col justify-center items-center gap-5 max-md:hidden'>
           <a href="https://wa.me/919810135752" target='_blank'><i className="fa-brands fa-whatsapp text-2xl"></i></a>

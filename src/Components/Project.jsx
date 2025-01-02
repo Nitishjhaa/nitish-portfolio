@@ -9,6 +9,8 @@ import projectb from '/images/project-4.jpg'
 import projectc from '/images/project-2.jpg'
 import projectd from '/images/project-1.jpg'
 import projecte from '/images/project-3.png'
+import bg from '/images/bg.jpg'
+
 
 
 const Project = () => {
@@ -98,11 +100,11 @@ const Project = () => {
     })
 
   return (
-    <div>
-        <div className='projectContainer font-QuickSand overflow-x-hidden bg-black text-white max-md:hidden'>
+    <div className='' >
+        <div className='projectContainer font-QuickSand overflow-x-hidden bg-black text-white max-md:hidden '>
             <h1 ref={ref} className='text-[30rem] w-[150rem] ml-96 max-lg:w-[168rem] max-lg:ml-0 max-xl:w-[178rem]'>My Project</h1>
         </div>
-        <div className='h-[50rem] border mt-10 max-md:mt-96 flex flex-col justify-center items-center max-md:h-[120rem] max-lg:h-[70rem] max-xl:h-[70rem] max-xl:mt-2'>
+        <div className='h-[50rem] mt-10 flex flex-col justify-center items-center max-md:h-[120rem] max-lg:h-[70rem] max-xl:h-[70rem] max-xl:mt-2'>
             <h1 className='text-center text-3xl'>Project</h1>
             <div className='w-[80%] max-md:w-[95%] h-full mt-7 max-lg:mt-2'>
                 <div className='projectList flex flex-wrap gap-5 justify-center max-md:flex-col max-md:items-center overflow-y-hidden' >

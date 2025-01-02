@@ -2,6 +2,7 @@ import React, { useRef,useState,useEffect } from 'react'
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from 'gsap'
+import bg from '/images/bg.jpg'
 
 const Contact = () => {
   gsap.registerPlugin(ScrollTrigger)
@@ -96,7 +97,7 @@ const Contact = () => {
     }
 
   return (
-    <div>
+    <div className='relative'>
       <div className='contactContainer font-QuickSand overflow-x-hidden bg-black text-white max-md:hidden'>
             <h1 ref={ref} className='text-[30rem] w-[170rem] ml-80 max-lg:w-[170rem] max-lg:ml-0'>Contact me</h1>
       </div>
@@ -152,6 +153,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className='absolute top-[100%] w-full text-center text-lg mt-7 max-md:mt-3 '>
+          Made with love ❤️ by Nitish
         </div>
     </div>
   )

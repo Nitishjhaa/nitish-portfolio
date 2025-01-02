@@ -4,6 +4,7 @@ import Project from './Project'
 import Testimonials from './Testimonials'
 import Contact from './Contact'
 import Index from './Index'
+import Certificate from './Certificate'
 
 
 
@@ -13,6 +14,7 @@ const Layout = () => {
         <div className='h-screen w-full'>
             <Index />
             <About />
+            <Certificate />
             <Project />
             <Testimonials />
             <Contact />
