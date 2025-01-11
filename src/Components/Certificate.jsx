@@ -9,6 +9,7 @@ import openAi from '/images/openAi.png'
 import javascript from '/images/javaScript.png'
 import MongoDB from '/images/MongoDB-1.png'
 import nodeMongo from '/images/nodeMongo.png'
+import figma from '/images/figma.jpg'
 
 const Certificate = () => {
   const [certificates, setCertificates] = useState([
@@ -18,10 +19,11 @@ const Certificate = () => {
     { id: 4, src: GenerativeAI, title: 'Generative AI' },
     { id: 5, src: nodeMongo, title: 'Node and MongoDB' },
     { id: 6, src: javascript, title: 'JavaScript' },
-    { id: 7, src: responsiveDesign, title: 'Html, Css, Js and Responsive Design' },
-    { id: 8, src: MongoDB, title: 'MongoDB' },
-    { id: 9, src: codeGuru, title: 'Code Guru' },
-    { id: 10, src: openAi, title: 'Open Ai' },
+    {id:7,src:figma,title:"Intro to wireframes and prototypes in figma"},
+    { id: 8, src: responsiveDesign, title: 'Html, Css, Js and Responsive Design' },
+    { id: 9, src: MongoDB, title: 'MongoDB' },
+    { id: 10, src: codeGuru, title: 'Code Guru' },
+    { id: 11, src: openAi, title: 'Open Ai' },
   ])
 
   const containerRef = useRef(null)
@@ -76,7 +78,7 @@ const Certificate = () => {
   return (
     <>
     <div className='max-md:mt-96'>
-        <h1 className='text-center text-2xl  max-md:pt-0'>Certificates</h1>
+        <h1 className='text-center text-2xl  max-md:pt-32'>Certificates</h1>
         <div className="flex justify-center items-center h-screen relative max-md:-mt-10">
             <div className='relative h-[80vh] w-[80%] border-l-2 border-r-2 border-black rounded-lg max-md:w-[95%] max-md:overflow-hidden max-md:h-[50vh] max-lg:overflow-hidden max-xl:overflow-hidden'>
                 <div className='absolute top-[15rem] -right-24 z-10 '>
@@ -113,7 +115,7 @@ const Certificate = () => {
                         <div key={i.id} className='w-[40rem] h-fit flex flex-col items-center justify-center mx-5 max-md:mx-0'>
                         <h1 className='text-center text-2xl pb-3 max-md:text-xl'>{i.title}</h1>
                         {i.src ? (
-                            <img src={i.src} className='w-[40rem] max-md:w-[20rem] border border-black hover:scale-105' alt={i.title} />
+                            <img src={i.src} className='w-[40rem] max-md:w-[30rem]  hover:scale-105' alt={i.title} />
                         ) : (
                             <div className='w-[40rem] h-[20rem] flex items-center justify-center bg-gray-200'>
                             <p>{i.title}</p>
@@ -125,7 +127,7 @@ const Certificate = () => {
                         <div key={i.id + certificates.length} className='w-[40rem] h-fit flex flex-col items-center justify-center mx-5 max-md:mx-0'>
                         <h1 className='text-center text-2xl pb-3 max-md:text-xl'>{i.title}</h1>
                         {i.src ? (
-                            <img src={i.src} className='w-[40rem] max-md:w-[20rem] border border-black hover:scale-105' alt={i.title} />
+                            <img src={i.src} className='w-[40rem] max-md:w-[30rem] hover:scale-105' alt={i.title} />
                         ) : (
                             <div className='w-[40rem] h-[20rem] flex items-center justify-center bg-gray-200'>
                             <p>{i.title}</p>

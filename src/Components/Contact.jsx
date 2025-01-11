@@ -139,10 +139,10 @@ const Contact = () => {
             </div>
             <div className='formContainer w-[50%] max-md:w-[95%] max-md:h-[50%] pt-20 max-md:grid max-md:place-items-center '>
               <form onSubmit={onSubmit} className=' flex flex-col items-center gap-5 justify-center' >
-                <input ref={refName} type="text" name="name" id="name" placeholder='Name' className='w-96 p-4 rounded-xl max-lg:w-80 border border-black' required />
-                <input type="email" name="email" id="email" placeholder='Email' className='w-96 border border-black p-4 rounded-xl max-lg:w-80' required/>
-                <input type="number" name="number" id="number" placeholder='Contact Number' className='w-96 border border-black p-4 rounded-xl max-lg:w-80' required/>
-                <textarea type="text" name="massage" id="massage" className='w-96 h-60 border border-black p-4 rounded-xl resize-none max-lg:w-80' placeholder='Enter your massage'></textarea>
+                <input ref={refName} type="text" name="name" id="name" placeholder='Name' className='w-96 p-4 shadow-lg rounded-xl max-lg:w-80 border border-black' required />
+                <input type="email" name="email" id="email" placeholder='Email' className='w-96 border shadow-lg border-black p-4 rounded-xl max-lg:w-80' required/>
+                <input type="number" name="number" id="number" placeholder='Contact Number' className='w-96 border shadow-lg border-black p-4 rounded-xl max-lg:w-80' required/>
+                <textarea type="text" name="massage" id="massage" className='w-96 h-60 border border-black p-4 shadow-lg rounded-xl resize-none max-lg:w-80' placeholder='Enter your massage'></textarea>
                 <div className='flex gap-10 max-lg:gap-3'>
                   <button className='w-40 max-lg:w-36 border border-black h-12 rounded-lg active:scale-95 hover:text-white hover:bg-black shadow-lg hover:shadow-2xl' type="submit">Submit Form</button>
                   <button className='w-40 max-lg:w-36 border border-black h-12 rounded-lg active:scale-95 hover:text-white hover:bg-black shadow-lg hover:shadow-2xl' onClick={focus} type="reset">Reset Form</button>

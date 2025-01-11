@@ -4,7 +4,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import line from '/images/line.png'
 import Button from './Button'
-import cv from '../Pdf/cv.pdf'
+import cv from '../Pdf/nitish_cv.pdf'
 import posterImg from '/images/poster.png'
 import myPic from '/images/Nitish_jha_pic.png'
 import bg from '/images/bg.jpg'
@@ -35,12 +35,19 @@ const Index = () => {
       <div className='h-screen w-[80%] flex flex-row gap-10 max-md:w-[95%] max-md:flex-col max-md:gap-5 max-lg:w-[95%]'>
         <div className='h-full w-10 flex flex-col justify-center items-center gap-5 max-md:hidden'>
           <a href="https://wa.me/919810135752" target='_blank'><i className="fa-brands fa-whatsapp text-2xl"></i></a>
-          <a href="/"><i className="fa-brands fa-github text-2xl"></i></a>
+          <a href="https://github.com/Nitishjhaa"><i className="fa-brands fa-github text-2xl"></i></a>
           <a href="https://www.linkedin.com/in/nitish-jhaa" target='_blank'><i className="fa-brands fa-linkedin-in text-2xl"></i></a>
+          <a href="https://stackoverflow.com/users/29121827/nitish"><i className="fa-brands fa-stack-overflow text-2xl"></i></a>
+        </div>
+        <div className='h-10 w-full flex-row justify-center items-center gap-10 hidden max-md:flex absolute -ml-3 top-[85%] '>
+          <a href="https://wa.me/919810135752" target='_blank'><i className="fa-brands fa-whatsapp text-3xl"></i></a>
+          <a href="https://github.com/Nitishjhaa"><i className="fa-brands fa-github text-3xl"></i></a>
+          <a href="https://www.linkedin.com/in/nitish-jhaa" target='_blank'><i className="fa-brands fa-linkedin-in text-3xl"></i></a>
+          <a href="https://stackoverflow.com/users/29121827/nitish"><i className="fa-brands fa-stack-overflow text-3xl"></i></a>
         </div>
         <div className='max-md:w-full hidden max-md:flex max-md:justify-center max-md:h-[30%] mt-10'>
           <div className='w-48 h-48 rounded-full overflow-hidden border border-black border-l-8 border-r-8 border-t-2 border-b-2'>
-              <img ref={ref} src={myPic} className='w-48 h-48' onMouseEnter={colorImage} onMouseLeave={sameImage}/>
+              <img ref={ref} src={myPic} className='w-48 h-48 pl-3' onMouseEnter={colorImage} onMouseLeave={sameImage}/>
           </div>        
         </div>
         <div className='w-[55%] max-md:w-full max-md:h-[70%]'>
@@ -50,13 +57,13 @@ const Index = () => {
             <h3>Web developer</h3>
           </div>
           <div className=' ml-10 max-md:ml-0 mt-5 max-md:mt-0'>
-            <p className='text-center '>
-              I am creative web developer from India ,<strong>Delhi</strong>. I am very passonate, and dedicated to my work. I finish my Projects in consistance way and on time.
+            <p className='text-center max-md:-ml-0 max-lg:-ml-5'>
+            I am a passionate and dedicated creative web developer based in <strong>Delhi</strong>, India. I take pride in delivering high-quality projects with consistency and precision, ensuring they are completed on time. My commitment to excellence drives me to continuously improve and innovate in every project I undertake.
             </p>
           </div>
           <div className='mt-10 flex max-md:justify-center gap-5 ml-12 max-md:ml-0'>
             <Button text="Download CV" icon= "fa-solid fa-file-arrow-down fa-bounce" href = {cv} cv = {cv}/>
-            <Button text="Contact me !" icon= "fa-solid fa-phone fa-shake" cv={null} href = {'tel:9810135752'}/>
+            <Button text="Contact me !" icon= "fa-solid fa-phone fa-shake" href = {'tel:9810135752'}/>
           </div>
         </div>
         <div className='pic w-[35%] grid place-items-center max-md:hidden'>

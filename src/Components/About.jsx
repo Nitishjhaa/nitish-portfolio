@@ -8,7 +8,6 @@ import tailwind from '/images/tailwind.png'
 import express from '/images/express.png'
 import mongoDB from '/images/mongoDB.png'
 import gsap1 from '/images/gsap.svg'
-import bg from '/images/bg.jpg'
 
 
 const About = () => {
@@ -196,31 +195,36 @@ const About = () => {
       <div className='mt-20 grid place-items-center h-[65rem]'>
         <div className='w-[80%] h-full max-md:w-full'>
           <div className='flex flex-row w-full max-lg:-ml-20'>
-            <div className='picContainer w-96 overflow-hidden max-md:hidden'>
-              <img src={myPic} className='h-96 max-md:hidden rounded-tl-3xl rounded-br-3xl drop-shadow-2xl' />
+            <div className='picContainer w-96 overflow-hidden max-md:hidden max-lg:ml-5 max-lg:mt-10'>
+              <img src={myPic} className='h-96 max-md:hidden rounded-tl-3xl rounded-br-3xl drop-shadow-2xl ' />
             </div>
             <div className='h-96 max-md:ml-28 w-full flex flex-col items-center '>
               <h1 className='text-center max-md:ml-10 text-2xl '>Introduction</h1>
-              <div className='w-[90%] mt-4 max-md:w-full max-lg:mt-1 max-lg:w-[100%] max-md:mt-3'>
-                <p className='text-sm w-[100%] text-center max-md:w-[115%]'>Hey, I’m Nitish kumar jha, a creative and versatile Web developer with a keen eye for detail. I specialize in creating visually stunning websites that convey a brand’s message and captivate its audience. I’m well-versed in a variety of design software and techniques, and I’m always looking for new ways to enhance my skills.</p>
-                <div className='mt-5 h-[17.4rem] max-lg:mt-1 max-md:mt-8 max-md:w-[120%]'>
-                  <div className='ml-10 pt-10 h-full flex justify-between overflow-hidden max-md:ml-0 max-md:pt-0'>
-                    <div className='intro w-full h-full text-center overflow-hidden'>
-                      <h1>Name :- Nitish kuamr jha</h1>
-                      <hr />
-                      <br />
-                      <h1>Education :- B.sc</h1>
-                      <hr />
-                      <br />
-                      <h1>Age :- 24</h1>
-                      <hr />
-                      <br />
-                      <h1>Mobile No. :- +91 9810135752</h1>
-                      <hr />
-                      <br />
-                      <h1>Email :- nj9876543210p@gmail.com</h1>
-                      <hr />
-                      <br />
+              <div className='w-[90%] mt-4 max-md:w-full max-lg:mt-1 max-lg:w-[100%] max-md:mt-3 max-md:-ml-3 max-lg:ml-28'>
+                <div className='text-cente w-[100%] max-md:ml-5 max-md:w-[105%] max-lg:w-[110%]'>
+                  <p className='text-center'>"Hi, I’m Nitish Kumar Jha, a creative web developer with a keen eye for detail. I specialize in crafting engaging, visually captivating websites that effectively communicate a brand’s message, while constantly evolving my skills to stay ahead in the tech world."
+                  </p>
+                </div>
+                <div className='h-[17.4rem]  max-lg:mt-1 max-md:mt-8 max-sm:w-[110%] max-md:w-[105%] '>
+                  <div className='pt-10 h-full flex justify-between overflow-hidden max-md:ml-8 max-md:pt-0'>
+                    <div className='intro w-full h-56 text-center overflow-hidden  '>
+                      <strong>
+                        <h1>Name :- Nitish kumar jha</h1>
+                        <hr />
+                        <br />
+                        <h1>Education :- B.sc</h1>
+                        <hr />
+                        <br />
+                        <h1>Age :- 24</h1>
+                        <hr />
+                        <br />
+                        <h1>Mobile No. :- +91 9810135752</h1>
+                        <hr />
+                        <br />
+                        <h1>Email :- nj9876543210p@gmail.com</h1>
+                        <hr />
+                        <br />
+                      </strong>
                     </div>
                   </div>
                 </div>
@@ -229,7 +233,7 @@ const About = () => {
           </div>
           <div className='mt-16 h-[33rem] max-md:mt-20 max-md:h-[60rem]'>
             <div className='flex flex-col items-center'>
-              <h1 className='text-center text-3xl'>Skills</h1>
+              <h1 className='text-center text-3xl mt-5 max-md:mt-20'>Skills</h1>
               <div className=' mt-3 w-[90%] h-[30rem] flex flex-row justify-between gap-2 max-md:flex-col max-md:h-[55rem] max-lg:w-[100%]'>
               <div className='skill w-[50%] max-md:h-[40rem] max-md:w-full overflow-hidden max-lg:w-full'>
                   {
